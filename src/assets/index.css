@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back{
+    background: url("../images/pexels-adonyi-gábor-1414651.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
