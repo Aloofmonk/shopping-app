@@ -7,3 +7,11 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
+.card-title{
+    border: 1px black solid;
+}
+
+.card-footer{
+    border: 1px black solid;
+}
