@@ -11,7 +11,9 @@
             </div>
         
             <div class="r-div ml-10">
-                Cart
+                <span>
+                    Cart(0)
+                </span>
             </div>
         </div>
     </nav>

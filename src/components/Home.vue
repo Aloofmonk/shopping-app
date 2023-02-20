@@ -8,13 +8,14 @@
 <script>
 import NavBar from './NavBar.vue';
 import Products from './Products.vue';
-    export default {
-        name: 'Home',
-        components: {
-            NavBar,
-            Products
-        }
-    }
+export default{
+    name: 'Home',
+    components: {
+        NavBar,
+        Products
+    },
+    
+}
 </script>
 
 <style>

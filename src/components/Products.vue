@@ -27,7 +27,7 @@
                                     <div class="cell">
                                         $4.82
                                     </div>
-                                    <input type="number" value="0">
+                                    <input type="number" v-model="carrots">
                                 </div>
                                 
                             </form>
@@ -39,7 +39,7 @@
 
                     <div class="flex flex-col justify-between w-1/4 h-full card bg-zinc-400">
                         <div class="card-title text-center py-5">
-                            Carrots
+                            Pineapples
                         </div>
                         <div class="relative card-body">
                             <div class=" mb-5 flex justify-center">
@@ -58,7 +58,7 @@
                                     <div class="cell">
                                         $4.82
                                     </div>
-                                    <input type="number" value="0">
+                                    <input type="number" v-model="pineapples">
                                 </div>
                     
                             </form>
@@ -70,7 +70,7 @@
 
                     <div class="flex flex-col justify-between w-1/4 h-full card bg-zinc-400">
                         <div class="card-title text-center py-5">
-                            Carrots
+                            Cherries
                         </div>
                         <div class="relative card-body">
                             <div class=" mb-5 flex justify-center">
@@ -89,7 +89,7 @@
                                     <div class="cell">
                                         $4.82
                                     </div>
-                                    <input type="number" value="0">
+                                    <input v-model="cherries" type="number" >
                                 </div>
                     
                             </form>
@@ -108,6 +108,14 @@
 
 
 export default{
-    name: 'Products'
+    name: 'Products',
+    data() {
+        return {
+            carrots: 5,
+            pineapples: 0,
+            cherries: 0,
+        }
+    },
+    
 }
 </script>
