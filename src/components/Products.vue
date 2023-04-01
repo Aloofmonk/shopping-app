@@ -13,7 +13,7 @@
                         <div class="relative card-body">
                             <div class=" mb-5 flex justify-center">
 
-                                <img src="../images/carrot.png" alt="carrot" width="150px">
+                                <img src="../images/carrot.png" alt="carrot">
                             </div>
                             <form class="flex justify-evenly space-x-12">
                                 <div class="label space-y-2">
@@ -25,9 +25,9 @@
                                 <div class="results space-y-2">
                                     <em>Vegetable</em>
                                     <div class="cell">
-                                        $4.82
+                                        $1.00
                                     </div>
-                                    <input type="number" v-model="carrots">
+                                    <input type="number" >
                                 </div>
                                 
                             </form>
@@ -44,7 +44,8 @@
                         <div class="relative card-body">
                             <div class=" mb-5 flex justify-center">
                     
-                                <img src="../images/carrot.png" alt="carrot" width="150px">
+                                
+                                <img src="../images/pineapple.png" alt="pineapple">
                             </div>
                             <form class="flex justify-evenly space-x-12">
                                 <div class="label space-y-2">
@@ -58,7 +59,7 @@
                                     <div class="cell">
                                         $4.82
                                     </div>
-                                    <input type="number" v-model="pineapples">
+                                    <input type="number" >
                                 </div>
                     
                             </form>
@@ -75,7 +76,7 @@
                         <div class="relative card-body">
                             <div class=" mb-5 flex justify-center">
                     
-                                <img src="../images/carrot.png" alt="carrot" width="150px">
+                                <img src="../images/fruits.jpg" alt="carrot" width="150px">
                             </div>
                             <form class="flex justify-evenly space-x-12">
                                 <div class="label space-y-2">
@@ -87,15 +88,16 @@
                                 <div class="results space-y-2">
                                     <em>Vegetable</em>
                                     <div class="cell">
-                                        $4.82
+                                        $2.00
                                     </div>
-                                    <input v-model="cherries" type="number" >
+                                    <input  type="number" >
                                 </div>
                     
                             </form>
                         </div>
                         <div class="card-footer text-center p-3">
-                            <button class="btn ">Add to cart</button>
+                            <button  class="btn ">Add to cart</button>
+                            <!-- v-on:click="addToCart('cherries')" -->
                         </div>
                     </div>
                 </div>    
@@ -109,13 +111,9 @@
 
 export default{
     name: 'Products',
-    data() {
-        return {
-            carrots: 5,
-            pineapples: 0,
-            cherries: 0,
-        }
-    },
-    
+    props: {top: Number, inventory: Object,},
+    computed: {
+        
+    }
 }
 </script>
